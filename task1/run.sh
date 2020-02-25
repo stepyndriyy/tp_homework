@@ -6,7 +6,7 @@ format=$2
 backup_dir_name=$3
 archive_name=$4
             
-//archive_dir=$base_dir/$backup_dir_name
+#archive_dir=$base_dir/$backup_dir_name
 
 mkdir $backup_dir_name
 
