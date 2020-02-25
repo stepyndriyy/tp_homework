@@ -1,7 +1,16 @@
 #!/bin/bash
 chmod +x run.sh
-mkdir $1/$3
-find $1 -name "*.$2" -exec cp --backup=t -- {} $1/$3/ \;
-tar -czf $1/$4 $1/$3
-rm -r $1/$3
+
+base_dir=$1
+format=$2
+backup_dir_name=$3
+archive_name=$4
+            
+//archive_dir=$base_dir/$backup_dir_name
+
+mkdir $backup_dir_name
+
+find $base_dir -name "*.$format" -exec cp --backup=t {} ./$backup_dir_name \;
+
+tar -zcf $archive_name ./$backup_dir_name
 echo 'done'
