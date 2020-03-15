@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/C.dir/C/main.cpp.o  -o ../bin/C -Wl,-rpath,/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/lib ../lib/liblib.so 
