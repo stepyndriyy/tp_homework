@@ -10,3 +10,7 @@ public:
     int sum();
     int mult();
 };
+
+// int Primitive::sum() {
+//     return a + b;
+// }
