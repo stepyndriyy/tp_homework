@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//A/index.h
+iostream
+-
+
+..//B/lib.h
+
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/main.h
+A/index.h
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/A/index.h
+B/lib.h
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/B/lib.h
+
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/main_test.cpp
+main_test.h
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/main_test.h
+
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/main_test.h
+main.h
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/main.h
+gtest/gtest.h
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/C/gtest/gtest.h
+

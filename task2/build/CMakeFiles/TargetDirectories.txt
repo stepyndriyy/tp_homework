@@ -1,0 +1,10 @@
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/CMakeFiles/rebuild_cache.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/CMakeFiles/edit_cache.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/CMakeFiles/test.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/CMakeFiles/C.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/CMakeFiles/preparing.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/CMakeFiles/CTest.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/B/CMakeFiles/rebuild_cache.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/B/CMakeFiles/edit_cache.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/B/CMakeFiles/lib.dir
+/home/stepyndriyy/Документы/mipt/cpp_works/tasks/task2/build/B/CMakeFiles/test.dir
