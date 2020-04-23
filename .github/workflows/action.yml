@@ -29,7 +29,17 @@ jobs:
         cd 3rdparty
         git clone https://github.com/google/googletest
         export GOOGLE_TEST_DIR=googletest
+        cmake -DCMAKE_INSTALL_PREFIX="/home/runner/work/tp_homework/tp_homework"
+        make
+        make install
       
+    - name: Test
+      uses: akhtyamovpavel/ActionGtestReport
+      with:
+        exec-path: "bin/CTestExe"
+        report-path: "report.xml"
+        working-directory: "task4"
+
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: echo Hello, world!
