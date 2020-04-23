@@ -29,7 +29,7 @@ jobs:
         cd 3rdparty
         git clone https://github.com/google/googletest
         export GOOGLE_TEST_DIR=googletest
-        cmake -DCMAKE_INSTALL_PREFIX="/home/runner/work/tp_homework/tp_homework"
+        cmake -DCMAKE_INSTALL_PREFIX=/home/runner/work/tp_homework/tp_homework ..
         make
         make install
       
