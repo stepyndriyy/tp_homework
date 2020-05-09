@@ -17,18 +17,18 @@ void WeatherTestCase::SetUp() {
     code_401.status_code = 401;
 }
 
-TEST_F(WeatherTestCase, SetApi) {
+TEST_F(WeatherTestCase, test1) {
     ASSERT_NO_THROW(weather.SetApiKey("badbadbad"));
 }
 
-TEST_F(WeatherTestCase, GetTest) {
+TEST_F(WeatherTestCase, test2) {
     EXPECT_CALL(weather, Get("town1"))
         .Times(1)
         .WillRepeatedly(Return(town1));
     ASSERT_NO_THROW(weather.Get("town2"));
 }
 
-TEST_F(WeatherTestCase, DifferenceGreater) {
+TEST_F(WeatherTestCase, test3) {
     EXPECT_CALL(weather, Get("town1"))
         .Times(1)
         .WillRepeatedly(Return(town1));
@@ -39,7 +39,7 @@ TEST_F(WeatherTestCase, DifferenceGreater) {
     ASSERT_EQ(weather.GetDifferenceString("town2", "town1"), "weather is good");
 }
 
-TEST_F(WeatherTestCase, DifferenceLower) {
+TEST_F(WeatherTestCase, test4) {
     EXPECT_CALL(weather, Get("town1"))
         .Times(1)
         .WillRepeatedly(Return(town1));
@@ -50,7 +50,7 @@ TEST_F(WeatherTestCase, DifferenceLower) {
     ASSERT_EQ(weather.GetDifferenceString("London", "Moscow"), "weather is bad");
 }
 
-TEST_F(WeatherTestCase, BadCityRespose) {
+TEST_F(WeatherTestCase, test5) {
     EXPECT_CALL(weather, Get("ErrorCity"))
         .Times(1)
         .WillRepeatedly(Return(responce_with_code_401));

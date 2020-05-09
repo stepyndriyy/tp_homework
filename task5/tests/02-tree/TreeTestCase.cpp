@@ -38,7 +38,7 @@ TEST_F(TreeTestCase, test1) {
 
 
 TEST_F(TreeTestCase, test2) {
-    ASSERT_THROW(GetTree(path + "/nothing.txt", true), std::invalid_argument);
+    ASSERT_THROW(GetTree(path + "/testf.txt", true), std::invalid_argument);
 }
 
 

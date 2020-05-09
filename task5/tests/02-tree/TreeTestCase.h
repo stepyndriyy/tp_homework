@@ -13,9 +13,7 @@ public:
     static void SetUpTestCase();
     static void TearDownTestCase();
 
-
     static std::string path; 
 };
 
 static std::string path = "";
-
