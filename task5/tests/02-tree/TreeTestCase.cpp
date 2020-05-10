@@ -14,10 +14,10 @@ using boost::filesystem::create_directory;
 using boost::filesystem::remove_all;
 
 void TreeTestCase::SetUpTestCase() {
-    path = current_path().string() + "/test1";
+    path = current_path().string() + "/test";
     create_directory(path);
     
-    std::string fname = path + "testf.txt";   
+    std::string fname = path + "/sample.txt";   
     std::ofstream fout(fname);
     fout << "awesome";
     fout.close();
@@ -33,12 +33,12 @@ void TreeTestCase::TearDownTestCase() {
 
 
 TEST_F(TreeTestCase, test1) {
-    ASSERT_THROW(GetTree(path + "/gooddir", true), std::invalid_argument);
+    ASSERT_THROW(GetTree("good", true), std::invalid_argument);
 }
 
 
 TEST_F(TreeTestCase, test2) {
-    ASSERT_THROW(GetTree(path + "/testf.txt", true), std::invalid_argument);
+    ASSERT_THROW(GetTree(path + "/sample.txt", true), std::invalid_argument);
 }
 
 
