@@ -16,4 +16,4 @@ public:
     static std::string path; 
 };
 
-static std::string path = "";
+std::string TreeTestCase::path = "";

@@ -33,7 +33,7 @@ void TreeTestCase::TearDownTestCase() {
 
 
 TEST_F(TreeTestCase, test1) {
-    ASSERT_THROW(GetTree(path + "/gooddir"), std::invalid_argument);
+    ASSERT_THROW(GetTree(path + "/gooddir", true), std::invalid_argument);
 }
 
 
